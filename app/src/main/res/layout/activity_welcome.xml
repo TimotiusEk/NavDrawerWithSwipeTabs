@@ -1,0 +1,97 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- An invisible view aligned to the center of the parent. Allows other
+    views to be arranged on either side -->
+    <View
+        android:id="@+id/centerShim"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_centerHorizontal="true"
+        />
+    <!--Set width to match_parent sets maximum width. alignParentLeft aligns
+    the left edge of this view with the left edge of its parent. toLeftOf
+    sets the right edge of this view to align with the left edge of the
+    given view. The result of all three settings is that this view will
+    always take up exactly half of the width of its parent, however wide
+    that may be. -->
+
+    <!--Same deal, but on the right -->
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_screen_bg_min"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bareng_logo_inside_color"
+        android:id="@+id/bareng_img"
+        android:layout_marginBottom="49dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/leftBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/centerShim"
+        android:layout_alignEnd="@+id/centerShim"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/leftBtn"
+        android:layout_toRightOf="@+id/leftBtn"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:text="Karena pergi sendirian sudah gak jaman lagi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/slogan_welcome"
+        android:textColor="@color/colorWhite"
+        android:ellipsize="none"
+        android:maxLines="2"
+        android:textSize="30sp"
+        android:scrollHorizontally="false"
+        android:textAlignment="center"
+        android:layout_marginTop="270dp"
+        android:layout_below="@+id/bareng_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bareng"
+        android:textSize="70sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/bareng_welcome_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="82dp"
+        android:layout_alignBottom="@+id/slogan_welcome"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+    <item android:title="Barengan Saya"
+          android:id="@+id/nav_barengan_saya"
+          android:icon="@drawable/ic_barengan_saya"
+        android:checked="true"/>
+
+    <item android:title="Cari Rute"
+          android:id="@+id/nav_cari_rute"
+          android:icon="@drawable/ic_cari_rute"
+        android:checked="false"/>
+
+    <item android:title="Buat Barengan"
+          android:id="@+id/nav_buat_barengan"
+          android:icon="@drawable/ic_buat_barengan"
+        android:checked="false"/>
+
+    <item android:title="Profil Saya"
+        android:id="@+id/nav_profil_saya"
+        android:icon="@drawable/ic_profil_saya"
+        android:checked="false"/>
+    </group>
+
+
+
+
+
+
+</menu>

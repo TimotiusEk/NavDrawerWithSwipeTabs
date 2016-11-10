@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.navdrawerwithswipetabs.PrimaryFragment"
+    android:id="@+id/main_fragment">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/car"
+        android:id="@+id/car_image"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/cari_barengan"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARI BARENGAN"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/cari_barengan"
+        android:layout_below="@+id/phone_image"
+        android:layout_alignRight="@+id/bikin_barengan"
+        android:layout_alignEnd="@+id/bikin_barengan" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIKIN BARENGAN"
+        android:padding="8dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/bikin_barengan"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/car_image"
+        android:layout_centerHorizontal="true"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:src="@drawable/phone"
+        android:id="@+id/phone_image"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
